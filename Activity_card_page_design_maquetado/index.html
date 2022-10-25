@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Vendcil page</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-header">
+            <a>
+                <img src="icons/back-button.png" class="icon-header">
+            </a>
+            <h3>Pago con tarjeta</h3>
+            <a>
+                <img id="img-hmenu" src="icons/more.png" class="icon-header">
+            </a>
+        </div>
+
+<!--body-->
+     <!--Product-->
+        <div id="div-body1" class="grid-body">
+           <div class="container-progress">
+            <progress id="progressbar" value="50" max="100"></progress>
+              <ul class="list-progress">
+                 <li class="current"></li>
+                 <li class="current"></li>
+                 <li class="unactive"></li>
+              </ul>
+           </div>
+            <div id="body1-body"> 
+            <img src="Images/pizza.jpg" class="product">
+            <table border="0" id="table-data-paid">
+                <th colspan="3">Pizza Luiggi's doom</th>
+                <tbody>
+                        <tr>
+                            <td>subtotal</td>
+                            <td>..........</td>
+                            <td>$180</td>
+                        </tr>
+                        <tr>
+                            <td>Envío</td>
+                            <td>..........</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Descuento</td>
+                            <td>..........</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td>Propina</td>
+                            <td>..........</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td>..........</td>
+                            <td>$200</td>
+                        </tr>
+                </tbody>
+            </table>
+           </div>
+        </div>
+   <!--card,Form and button-->     
+        <div id="div-body2" class="grid-body">
+            <img src="Images/creditcard.png" class="card">
+            <br>
+            <br>
+           <form class="form-payment">
+                <label for="nombre-completo">Nombre Completo</label>
+                <input id="nombre-completo" type="text" placeholder="Nombre">
+                
+                <label for="numero-tarjeta">Número de tarjeta</label>
+                <input id="numero-tarjeta" type="text" placeholder="000-0000-0000-0000">
+          
+             <div class="horizontal-form"> 
+                <div>
+                    <label  for="fecha-exp">Fecha de expiracion</label>
+                    <input id="fecha-exp" type="date" placeholder="MM/DD/YYYY">   
+                </div>
+                <div>
+                    <label for="fecha-exp">Codigo de Verificación</label>
+                    <input id="fecha-exp" type="numner" placeholder="CVC">
+                </div> 
+            </div>     
+           </form>
+
+        <button type="submit" class="btn-pay">pagar  $200
+            <img src="icons/candado.png" class="icon-candado">
+        </button>
+        </div>
+        <!--Footer-->
+        <div class="grid-footer">
+            <ul class="menu">
+               <li>
+                <a><img src="icons/icon-home.png" class="icon-btn-menu"></a>
+             </li>
+                <li>
+                <a><img src="icons/tarjeta-de-credito.png" class="icon-btn-menu btn-selected"></a>
+                </li>
+               <li>
+                <a><img src="icons/documentos.png" class="icon-btn-menu"></a>
+               </li>
+               <li>
+                <a><img src="icons/solicitud.png" class="icon-btn-menu"></a>
+               </li> 
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

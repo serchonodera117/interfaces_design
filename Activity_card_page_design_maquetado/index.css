@@ -1,0 +1,192 @@
+/*--------------------------------------grid container*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header header'
+    'body body body body'
+    'footer footer footer footer';
+}
+
+.grid-container div{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*--------------------------------------header*/
+
+.grid-header{
+ grid-area:  header;  
+ box-shadow: 0px 3px  5px 1px rgba(218, 145, 242, 0.3);
+ display: flex;
+}
+.grid-header img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.icon-header{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:5px;
+}
+#img-hmenu{
+    position: fixed;
+    right: 5%;
+}
+/*----------------------------------------------grid body*/
+#div-body1{
+    grid-area: body;
+    margin-top: -1px;
+    border-radius: 0px 0 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px  5px 1px rgba(218, 145, 242, 0.3);
+    font-size: 12px;
+}
+/*----Steps*/
+  .container-progress {
+    width: 100%;
+    margin-top: -10px;
+  }
+  .list-progress {counter-reset: step;}
+  .list-progress li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 15%;
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .current{
+    background-color: rgb(180, 57, 241);
+  }.unactive{
+    background-color: rgb(209, 202, 213);
+  }
+  #progressbar{
+    position: absolute;
+    width: 50%;
+    margin-top: 3px;
+    margin-left: 19%;
+    margin-right: auto;
+    display:table;
+    z-index: -1;
+  }
+/*-----------body product*/
+#body1-body{
+    display: flex;
+}
+.product{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+#table-data-paid{
+    float: right;
+    right: 0;
+    position: absolute;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+/*--------------------------------body form*/
+#div-body2{
+    grid-column: 3;
+    text-align: center;
+}
+.card{
+    margin-top: 10px;
+    justify-content: center;
+    width: 17rem;
+    height: 11rem;
+    object-fit: cover;
+}
+.form-payment label{
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.form-payment input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid rgb(180, 164, 164);
+}
+.horizontal-form{
+  display: flex;
+}
+
+.btn-pay{
+    margin-top: 10%;
+    height: 3rem;
+    width: 10rem;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(96, 84, 208);
+    border: 1px solid rgb(96, 84, 208);
+    border-radius: 30px;
+}
+.icon-candado{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: 15px;
+    position: absolute;
+}
+/*--------------------------------------Footer*/
+.grid-footer{
+    position: fixed;
+    background-color: #fff;
+    width: 90%; 
+    bottom: 10px;
+    height: 4rem;
+    grid-area: footer;
+    border-radius: 20px;
+    box-shadow: 1px -1px  10px 1px rgba(190, 130, 208, 0.3)
+}
+
+.menu{
+    display: flex;
+    margin-left: -10%;
+    list-style: none;
+    justify-content: center;
+}.menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.icon-btn-menu{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: -13px;
+}
+.btn-selected{
+    transform:translateY(-13px);
+    border: 5px solid rgb(101, 24, 224);
+    box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978)
+}
