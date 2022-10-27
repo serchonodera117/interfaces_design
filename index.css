@@ -1,0 +1,363 @@
+/*--------------------------------------grid container*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header header'
+    'body body body body'
+    'footer footer footer footer';
+}
+
+.grid-container div{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*--------------------------------------header*/
+
+.grid-header{
+ grid-area:  header;  
+ box-shadow: 0px 3px  5px 1px rgba(218, 145, 242, 0.3);
+ display: flex;
+ transition: all 0.5s;
+}
+.grid-header img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+ transition: all 0.5s;
+
+}
+
+.icon-header{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:5px;
+ transition: all 0.5s;
+ border-radius: 50px;
+cursor: pointer;
+}.icon-header:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 3px 3px rgba(206, 202, 208, 0.978);
+}
+#img-hmenu{
+    position: absolute;
+    right: 5%;
+    transition: all 0.5s;
+
+}
+#h1-titulo{
+   font-size: 15px;
+   text-align: center;
+   font-weight: bold;
+   color: rgb(77, 74, 81);
+   margin-left: auto;
+   margin-right: auto;
+ transition: all 0.5s;
+
+}
+/*----------------------------------------------grid body*/
+#div-body1{
+    grid-area: body;
+    margin-top: -1px;
+    border-radius: 0px 0 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px  5px 1px rgba(218, 145, 242, 0.3);
+    font-size: 12px;
+ transition: all 0.5s;
+
+}
+/*----Steps*/
+  .container-progress {
+    width: 100%;
+    margin-top: -10px;
+ transition: all 0.5s;
+
+  }
+  .list-progress {counter-reset: step;}
+  .list-progress li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 15%;
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    z-index: 1;
+ transition: all 0.5s;
+
+  }
+  .current{
+   transition: all 0.5s;
+    background-color: rgb(180, 57, 241);
+  }.unactive{
+    background-color: rgb(209, 202, 213);
+  }
+  #progressbar{
+    position: absolute;
+    width: 50%;
+    margin-top: 3px;
+    margin-left: 19%;
+    margin-right: auto;
+    display:table;
+    z-index: -1;
+ transition: all 0.5s;
+
+  }
+/*-----------body product*/
+#body1-body{
+    display: flex;
+     transition: all 0.5s;
+}
+.product{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+ transition: all 0.5s;
+
+}
+#table-data-paid{
+    float: right;
+    right: 0;
+    position: absolute;
+    margin-right: 30px;
+    margin-top: 10px;
+ transition: all 0.5s;
+
+}
+
+/*--------------------------------body form*/
+#div-body2{
+    grid-column: 3;
+    text-align: center;
+ transition: all 0.5s;
+
+}
+.card{
+    margin-top: 10px;
+    justify-content: center;
+    width: 17rem;
+    height: 11rem;
+    object-fit: cover;
+ transition: all 0.5s;
+cursor: pointer;
+border-radius: 20px;
+}.card:hover{
+    box-shadow: 0px 1px 3px 3px rgba(134, 135, 134, 0.978);
+
+}
+.form-payment label{
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+ transition: all 0.5s;
+ cursor: pointer;
+}
+.form-payment input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid rgb(180, 164, 164);
+}.form-payment input:focus{
+    outline-color: rgba(123, 123, 246, 0.611);
+    outline-offset: 5px;
+    outline-width: 3px;
+}
+.horizontal-form{
+  display: flex;
+ transition: 0.5s;
+
+}
+
+.btn-pay{
+    margin-top: 10%;
+    height: 3rem;
+    width: 10rem;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(96, 84, 208);
+    border: 1px solid rgb(96, 84, 208);
+    border-radius: 30px;
+ transition:  0.5s;
+cursor: pointer;
+}.btn-pay:hover{
+    background-color: rgb(149, 139, 239);
+    box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978);
+}
+.icon-candado{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: 15px;
+    position: absolute;
+ transition: all 0.5s;
+
+}
+/*--------------------------------------Footer*/
+.grid-footer{
+    position: fixed;
+    background-color: #fff;
+    width: 90%; 
+    bottom: 10px;
+    height: 4rem;
+    grid-area: footer;
+    border-radius: 20px;
+    box-shadow: 1px -1px  10px 1px rgba(190, 130, 208, 0.3);
+     transition: all 0.5s;
+
+}
+
+.menu{
+    display: flex;
+    margin-left: -10%;
+    list-style: none;
+    justify-content: center;
+ transition: all 0.5s;
+
+}.menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+ transition: all 0.5s;
+}.menu img:hover{
+    transform:translateY(-13px);
+    border: 5px solid rgb(101, 24, 224);
+    box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978);
+    cursor: pointer;
+}
+.icon-btn-menu{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: -13px;
+ transition: all 0.5s;
+}
+.btn-selected{
+    transform:translateY(-13px);
+    border: 5px solid rgb(101, 24, 224);
+    box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978);
+  transition: all 0.5s;
+}
+
+/*---------------------------------------phone mode to desktop mode*/
+@media screen and (min-width: 1500px){
+    
+    /*---------------------------Header*/
+    .grid-header{
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+    .icon-header{
+        position: fixed;
+        z-index: 10;
+        margin-top: 1rem;
+    }#img-hmenu{position: fixed;}
+
+    .grid-footer{ /*from footer, became to header*/
+        grid-area: header;
+        position: fixed;
+        width: 98%;
+        top: 10px;
+        margin-left: 2%;
+    }#h1-titulo{
+        position: relative;
+        top: 5rem;
+        font-size: 20px
+    }
+    .container-progress{
+        position: relative;
+        top: -50%;
+        left: -5%;
+        width: 63rem;
+        align-items: center;
+        align-items: center;
+    }
+    
+    #progressbar{
+        position: absolute;
+        margin-left: 0;
+        margin-right: 0 auto;
+        display: table;
+        width: 100%;
+    }    /*-----------progressbar steps*/
+    .list-progress{
+        margin-left: -4%;
+    }
+    .list-progress li{
+        margin-left: 0;
+    }.menu img:hover{
+        transform:translateY(5px);
+    }.btn-selected{
+        transform:translateY(5px);
+    }
+   #current2{
+    margin-left: 32%;
+   }.unactive{
+    position: absolute;
+    float: right;
+    right: -15%;
+   }
+    /*---------------------------body*/
+    #div-body1{
+        padding-top: 0rem;
+        width: 23rem;
+        height: 13rem;
+        top: 10rem;
+        grid-column: 2;
+        position: relative;
+        border-radius: 20px 20px 20px 20px;
+    }
+    #div-body2{
+        position: relative;
+        grid-column: 2;
+        top: 0;
+        z-index: 10;
+        width:30rem;
+    }.card{
+        margin-top: 10.2rem;
+        margin-left: -5.5rem;
+        width: 23rem;
+        height: 14rem;
+        background-color: red;
+    }.form-payment{
+        position: absolute;
+        top: -13%;
+        right: -110%;
+        font-size: 20px;
+    }
+    
+    .btn-pay{
+        position: absolute;
+        top: 50%;
+        right: -107%;
+        font-size: 20px;
+        width: 12rem;
+    }
+    .horizontal-form{ /*becomes intal horizontal form*/
+        display: block;
+    }
+    #table-data-paid{
+        font-size: 16px;
+    }
+}
