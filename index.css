@@ -43,7 +43,6 @@ cursor: pointer;
     position: absolute;
     right: 5%;
     transition: all 0.5s;
-
 }
 #h1-titulo{
    font-size: 15px;
@@ -53,7 +52,10 @@ cursor: pointer;
    margin-left: auto;
    margin-right: auto;
  transition: all 0.5s;
-
+}
+#icon-back{
+    opacity: 0;
+    visibility: hidden;
 }
 /*----------------------------------------------grid body*/
 #div-body1{
@@ -72,40 +74,53 @@ cursor: pointer;
 }
 /*----Steps*/
   .container-progress {
-    width: 100%;
-    margin-top: -10px;
- transition: all 0.5s;
-
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    right: 34%;
+    transition: all 0.5s;
   }
-  .list-progress {counter-reset: step;}
+  .list-progress{
+    margin-left:-40px;
+    margin-top: -18px;
+  }
   .list-progress li{
     list-style-type: none;
     display: inline-block;
     position: relative;
-    margin-left: 10%;
-    margin-right: 15%;
     height: 5px;
     width: 5px;
-    text-align: center;
+    margin-top: 0px;
+    z-index: 1;
     cursor: pointer;
     padding: 7px;
     border-radius: 50%;
-    z-index: 1;
- transition: all 0.5s;
+    transition: all 0.5s;
 
   }
-  .current{
-   transition: all 0.5s;
+  .step1{
+   margin-left: 0%;
+   margin-right: 0%;
+    transition: all 0.5s;
     background-color: rgb(180, 57, 241);
-  }.unactive{
+  }
+  .step2{
+    margin-left: 25%;
+    margin-right: 0%;
+    display: table;
+   transition: all 0.5s;
+   background-color: rgb(180, 57, 241);
+  }
+  .step3{
+    float: right;
+    right: 0%;
     background-color: rgb(209, 202, 213);
   }
   #progressbar{
-    position: absolute;
-    width: 50%;
+    position: flex;
+    width: 100%;
     margin-top: 3px;
-    margin-left: 19%;
-    margin-right: auto;
     display:table;
     z-index: -1;
  transition: all 0.5s;
@@ -114,6 +129,7 @@ cursor: pointer;
 /*-----------body product*/
 #body1-body{
     display: flex;
+    margin-top: 2rem;
      transition: all 0.5s;
 }
 .product{
@@ -122,7 +138,7 @@ cursor: pointer;
     object-fit: cover;
     border-radius: 20px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 10%;
     margin-bottom: 10px;
     margin-bottom: 10px;
  transition: all 0.5s;
@@ -132,7 +148,7 @@ cursor: pointer;
     float: right;
     right: 0;
     position: absolute;
-    margin-right: 30px;
+    margin-right: 10%;
     margin-top: 10px;
  transition: all 0.5s;
 
@@ -178,8 +194,9 @@ border-radius: 20px;
 }
 .horizontal-form{
   display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
  transition: 0.5s;
-
 }
 
 .btn-pay{
@@ -215,7 +232,7 @@ cursor: pointer;
 .grid-footer{
     position: fixed;
     background-color: #fff;
-    width: 90%; 
+    width: 95%; 
     bottom: 10px;
     height: 4rem;
     grid-area: footer;
@@ -237,15 +254,18 @@ cursor: pointer;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
  transition: all 0.5s;
 }.menu img:hover{
     transform:translateY(-13px);
     border: 5px solid rgb(101, 24, 224);
     box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978);
-    cursor: pointer;
+    cursor: pointer; 
+}.menu img:focus{
+    opacity: 0;
 }
+
 .icon-btn-menu{
     object-fit: cover;
     width: 50px;
@@ -254,15 +274,15 @@ cursor: pointer;
     margin-top: -13px;
  transition: all 0.5s;
 }
-.btn-selected{
+/* .btn-selected{
     transform:translateY(-13px);
     border: 5px solid rgb(101, 24, 224);
     box-shadow: 0px 1px 3px 3px rgba(52, 209, 65, 0.978);
   transition: all 0.5s;
-}
+} */
 
 /*---------------------------------------phone mode to desktop mode*/
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1300px){
     
     /*---------------------------Header*/
     .grid-header{
@@ -284,40 +304,42 @@ cursor: pointer;
         position: relative;
         top: 5rem;
         font-size: 20px
-    }
-    .container-progress{
-        position: relative;
-        top: -50%;
-        left: -5%;
-        width: 63rem;
-        align-items: center;
-        align-items: center;
-    }
-    
-    #progressbar{
-        position: absolute;
-        margin-left: 0;
-        margin-right: 0 auto;
-        display: table;
-        width: 100%;
-    }    /*-----------progressbar steps*/
-    .list-progress{
-        margin-left: -4%;
-    }
-    .list-progress li{
-        margin-left: 0;
-    }.menu img:hover{
+    } .menu img:hover{
         transform:translateY(5px);
     }.btn-selected{
         transform:translateY(5px);
     }
-   #current2{
-    margin-left: 32%;
-   }.unactive{
-    position: absolute;
-    float: right;
-    right: -15%;
-   }
+      /*-----------progressbar steps*/
+    .container-progress{
+        position: absolute;
+        top: 10rem;
+        left: 30%;
+        right:30%;
+        width: 40%;
+        align-items: center;
+        align-items: center;
+    }
+    #progressbar{
+        position: absolute;
+        margin-left: 0%;
+        margin-right: 0%;
+        display: table;
+        width: 100%;
+    }  
+    .list-progress{
+        margin-left: 0%;
+    }
+    .list-progress li{
+        margin-top: 20px;
+    }.step1{
+        float: left;
+        left: -8%;
+    }.step2{
+        left: 14%;
+        right: 10%;
+    }.step3{
+        float: right;
+    }
     /*---------------------------body*/
     #div-body1{
         padding-top: 0rem;

@@ -11,7 +11,7 @@
     <div class="grid-container">
         <div class="grid-header">
             <a>
-                <img src="icons/back-button.png" alt="Back button" class="icon-header">
+                <img src="icons/back-button.png" alt="Back button" id="icon-back" class="icon-header">
             </a>
             <h1 id="h1-titulo">Pago con tarjeta</h1>
             <a>
@@ -19,17 +19,17 @@
             </a>
         </div>
 
+        <div class="container-progress">
+            <progress id="progressbar" value="50" max="100"></progress>
+              <ul class="list-progress">
+                 <li class="step1"></li>
+                 <li class="step2" id="current2"></li>
+                 <li class="step3"></li>
+              </ul>
+           </div>
 <!--body-->
      <!--Product-->
         <div id="div-body1" class="grid-body">
-           <div class="container-progress">
-            <progress id="progressbar" value="50" max="100"></progress>
-              <ul class="list-progress">
-                 <li class="current"></li>
-                 <li class="current" id="current2"></li>
-                 <li class="unactive"></li>
-              </ul>
-           </div>
             <div id="body1-body"> 
             <img src="Images/pizza.jpg" alt="shoping product image" class="product">
             <table border="0" id="table-data-paid">
